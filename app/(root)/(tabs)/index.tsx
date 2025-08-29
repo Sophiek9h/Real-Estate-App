@@ -8,10 +8,6 @@ export default function Index() {
 
       <Text className="font-rubik-light text-xl mb-4">Welcome to the app!</Text>
 
-      <Link href="./explore">  Explore </Link>
-      <Link href="./profile">  Profile </Link>
-      <Link href="/sign-in">  Sign In </Link>
-      <Link href="/properties/123">  Property </Link>
     </View>
   );
 }

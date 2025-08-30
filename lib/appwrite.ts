@@ -64,9 +64,9 @@ export async function getCurrentUser() {
   try {
     const result = await account.get();
     if (result.$id) {
-      const userAvatar = avatar.getInitials(result.name);
+      const userAvatar = `${config.endpoint}/avatars/initials?name=${encodeURIComponent(result.name)}&project=${config.projectId}`;
 
-    //   console.log(JSON.stringify(result));
+      // console.log("user image", userAvatar.toString());
 
       return {
         ...result,

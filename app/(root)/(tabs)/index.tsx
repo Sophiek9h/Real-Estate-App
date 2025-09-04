@@ -1,3 +1,4 @@
+import { Cards, FeaturedCards } from "@/components/Cards";
 import Search from "@/components/Search";
 import icons from "@/constants/icons";
 import { useGlobalContext } from "@/lib/global-provider";
@@ -38,6 +39,7 @@ export default function Index() {
         {/* search component */}
         <Search/>
 
+        {/* Featured Title row */}
         <View className="flex flex-row justify-between items-center my-5">
           <Text className="font-rubik-semibold text-xl text-black-300">
             Featured
@@ -48,6 +50,33 @@ export default function Index() {
             </Text>
           </TouchableOpacity>
         </View>
+
+        <View className="flex flex-row gap-5 mt-5">
+          <FeaturedCards/>
+          <FeaturedCards/>
+        </View>
+
+        {/* Card Title row */}
+        <View className="flex flex-row justify-between items-center mt-5">
+          <Text className="font-rubik-semibold text-xl text-black-300">
+            Our Recommendation
+          </Text>
+          <TouchableOpacity>
+            <Text className="text-base text-primary-300 font-rubik-semibold">
+              See All
+            </Text>
+          </TouchableOpacity>
+        </View>
+
+        {/* Cards component */}
+        <View className="flex flex-row gap-5">
+          <Cards/>
+          <Cards/>
+        </View>
+
+
+
+        
 
         
 

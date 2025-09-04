@@ -1,4 +1,5 @@
 import { Cards, FeaturedCards } from "@/components/Cards";
+import Filters from "@/components/Filters";
 import Search from "@/components/Search";
 import icons from "@/constants/icons";
 import { useGlobalContext } from "@/lib/global-provider";
@@ -67,6 +68,8 @@ export default function Index() {
             </Text>
           </TouchableOpacity>
         </View>
+
+        <Filters/>
 
         {/* Cards component */}
         <View className="flex flex-row gap-5">
